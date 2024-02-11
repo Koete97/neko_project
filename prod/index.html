@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body
+    class="tracking-[0.04rem] text-lightText dark:text-darkText text-sm/7 sm:text-base/7 lg:text-lg/7 bg-light dark:bg-dark relative"
+  >
+    <section class="max-w-[1280px] mx-auto min-h-screen">
+      <header id="header" class="p-2 h-fit z-10 bg-lightAccents">
+        <nav
+          id="nav"
+          class="flex justify-between items-center py-3 h-10"
+        >
+          <div class="">
+            <a href="#">
+              <img src="./images/logo.png" alt="" height="10px" class="w-8" />
+            </a>
+          </div>
+
+          <ul
+            class="hidden sm:flex space-x-6 grow items-center justify-center text-lg font-semibold"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Bookings</a></li>
+            <li><a href="./pages/blog.html">Blog</a></li>
+          </ul>
+
+          <button>
+            <div id="hamburger" class="space-y-1 sm:hidden bg-light rounded-lg shadow-sm p-2">
+              <div class="h-[2px] w-5 rounded-full bg-brown"></div>
+              <div class="h-[2px] w-5 rounded-full bg-brown"></div>
+              <div class="h-[2px] w-5 rounded-full bg-brown"></div>
+            </div>
+
+            <!-- light/dark mode -->
+            <div id="mode-switch" class="hidden sm:block bg-light rounded-lg shadow-sm p-2">
+              <div id="sun" class="hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.4"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                  />
+                </svg>
+              </div>
+
+              <div id="moon" class="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.4"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </nav>
+
+      </header>
+
+        <!-- mobile menu -->
+        <article id="menu-wrapper" class="hidden sm:hidden">
+          <div class="absolute top-0 bottom-0 left-0 right-0 z-30">
+            <div class="h-full w-full">
+              <!-- menu -->
+              <div
+                id="mobile-menu"
+                class="fixed top-0 bottom-0 right-0 z-10 w-3/5 xs:w-1/2 bg-lightAccents rounded-s-lg shadow-lg"
+              >
+                <div class="flex flex-col space-y-4 pt-2 h-full">
+                  <div class="flex justify-end items-center px-2 pb-3">
+                    <div id="closeMenu" class="flex items-center justify-end">
+                      <div class="relative flex items-center justify-center w-10 h-10 bg-light rounded-lg shadow-sm p-2">
+                        <div
+                          class="bar-1 h-[2px] w-5 rounded-full bg-brown absolute top-[18px] left-[11px]"
+                        ></div>
+                        <div
+                          class="bar-2 h-[2px] w-5 rounded-full bg-brown absolute top-[18px] left-[11px]"
+                        ></div>
+                        <span class="text-light dark:text-dark">.</span>
+                      </div>
+
+                      <!-- just a placeholder -->
+                    </div>
+                  </div>
+
+                  <div class="grow flex flex-col justify-between pb-3">
+                    <ul class="space-y-4 font-semibold text-base">
+                      <li class="px-2"><a href="">Home</a></li>
+                      <li class="px-2"><a href="">Services</a></li>
+                      <li class="px-2"><a href="">Bookings</a></li>
+                      <li class="px-2"><a href="">Blog</a></li>
+                    </ul>
+
+                    <button id="mode-switch" class="mx-2 sm:hidden w-fit bg-light rounded-lg shadow-sm p-2">
+                      <div id="sun" class="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.4"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                          />
+                        </svg>
+                      </div>
+
+                      <div id="moon" class="hidden">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.4"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </header>
+
+      <!-- hero section  -->
+      <article id="hero" class="pt-6 pb-10 flex flex-col">
+        <div class="tracking-widest mb-4">
+          <h1 class="text-2xl font-bold my-4 px-2 text-center uppercase ">Lilaphalapha</h1>
+
+          <h2 class="text-center font-semibold tracking-widest mb-6 px-2">
+            Actor | MC | Philanthropist
+          </h2>
+
+          <div class="break-all hyphens-auto" style="background: url('./images/drawing.svg') no-repeat center center/cover;">
+            <h3 class="mb-2 px-2">Hi there! Bofihla Neko here. </h3>
+            <p class="px-2">
+             I am an actor and an MC with exceptional track record of service delivery and experience. I am also a philanthropist and an ambassador to giant brands locally.  
+            </p>
+
+            <h3 class="mt-3 px-2">I am honoured for stopping by...</h3>
+
+            <!-- carousel btn -->
+            <div class="flex space-x-4  mt-10 items-center justify-center">
+              <button class="h-1 w-8  border bg-opacity-60 border-brown border-opacity-80 rounded-lg"></button>
+              <button class="h-1 w-8 bg-opacity-60 bg-brown border border-brown border-opacity-80 rounded-lg"></button>
+            </div>
+          </div>
+
+          <div class="pt-4 px-2 w-fit mx-auto space-x-2 mt-10">
+            <button
+              class="px-4 py-[1px] font-semibold rounded-lg text-light bg-brown shadow"
+            >
+              <a href="#">View services</a>
+            </button>
+            <button
+              class="px-4 py-[1px] font-semibold rounded-lg text-lightText bg-light border border-dark shadow"
+            >
+              <a href="#">Book Neko</a>
+            </button>
+          </div>
+        </div>
+
+        <!-- small stats -->
+        <div class="mt-10 mx-2 bg-lightAccents rounded-lg p-4 flex items-center gap-4">
+          <div>
+            <h1>5.0</h1>
+          </div>
+
+          <div></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- overlay -->
+    <section
+      id="overlay"
+      class="max-w-[1280px] mx-auto hidden absolute top-0 bottom-0 left-0 right-0 bg-black z-10"
+    ></section>
+
+    <!-- horizontal rule -->
+    <div
+      class="w-full h-[1px] bg-gradient-to-r from-transparent from-15% via-brown via-50% to-85%"
+    ></div>
+
+    <main>
+      <!-- services -->
+      <section class="max-w-[1280px] mx-auto min-h-screen mt-10 pb-10">
+  
+      </section>
+  
+      <!-- horizontal rule -->
+      <div
+        class="w-full h-[1px] bg-gradient-to-r from-transparent from-15% via-brown via-50% to-85%"
+      ></div>
+  
+      <!-- bookings -->
+      <section class="max-w-[1280px] mx-auto min-h-screen mt-10 pb-10">
+  
+      </section>
+  
+      <!-- FAQ's -->
+      <section class="max-w-[1280px] mx-auto min-h-screen mt-10 pb-10">
+  
+      </section>
+    </main>
+
+
+    <!-- footer -->
+    <footer class="max-w-[1280px] mx-auto"></footer>
+
+    <script src="./scripts/bundle.js"></script>
+  </body>
+</html>

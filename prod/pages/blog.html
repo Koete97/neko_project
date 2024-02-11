@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlogPage</title>
+
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+
+  <body
+    class="tracking-[0.04rem] text-lightText dark:text-darkText text-sm/7 sm:text-base/7 lg:text-lg/7 bg-light dark:bg-dark relative"
+  >
+    <section class="max-w-[1280px] mx-auto min-h-screen">
+      <header id="header" class="p-2 h-fit bg-light z-10 bg-lightAccents">
+        <nav
+          id="nav"
+          class="flex justify-between items-center py-3 h-10"
+        >
+          <button>
+            <div id="back-btn" class=" bg-light rounded-lg shadow-sm p-2">
+              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" stroke-width="1.4" stroke="#875244"
+              class="w-5 h-5 fill-brown">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+            </svg>
+            </div>
+          </button>
+
+
+          <button>
+            <!-- light/dark mode -->
+            <div id="mode-switch" class="hidden sm:block bg-light rounded-lg shadow-sm p-2">
+              <div id="sun" class="hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.4"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                  />
+                </svg>
+              </div>
+
+              <div id="moon" class="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.4"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </nav>
+
+      </header>
+
+      <!-- hero section  -->
+      <article id="hero" class="px-2 pt-6 pb-10">
+      </article>
+    </section>
+
+    <!-- overlay -->
+    <!-- you can use it if there is a need down the road, -->
+    <!-- not always active -->
+    <section
+      id="overlay"
+      class="max-w-[1280px] mx-auto hidden absolute top-0 bottom-0 left-0 right-0 bg-black z-10"
+    ></section>
+
+    <!-- horizontal rule -->
+    <div
+      class="w-full max-w-[1280px] mx-auto h-[1px] bg-gradient-to-r from-transparent from-15% via-brown via-50% to-85%"
+    ></div>
+
+    <main>
+      <!-- laptop tab for selecting articles -->
+      <section class="max-w-[1280px] mx-auto min-h-screen mt-10 pb-10">
+        <artcle></article>
+        <artcle></article>
+      </section>
+  
+      <!-- middle display for each selected article -->
+      <div
+        class="w-full max-w-[1280px] mx-auto h-[1px] bg-gradient-to-r from-transparent from-15% via-brown via-50% to-85%"
+      ></div>
+  
+      <!-- bottom tab for selecting articles on mobile screens -->
+      <section class="max-w-[1280px] mx-auto min-h-screen mt-10 pb-10">
+        <artcle></article>
+        <artcle></article>
+      </section>
+    </main>
+
+
+    <footer class="max-w-[1280px] mx-auto"></footer>
+
+    <script src="../scripts/blog.js"></script>
+  </body>
+</html>
